@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cholesterol Prediction</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🩺 Cholesterol Level Prediction</h2>
+    <form action="/predict" method="post">
+      <input type="text" name="age" placeholder="Age (in years)" required><br>
+      <input type="text" name="height" placeholder="Height (cm)" required><br>
+      <input type="text" name="weight" placeholder="Weight (kg)" required><br>
+      <input type="text" name="ap_hi" placeholder="Systolic BP" required><br>
+      <input type="text" name="ap_lo" placeholder="Diastolic BP" required><br>
+      <input type="text" name="gluc" placeholder="Glucose (1-3)" required><br>
+      <input type="text" name="smoke" placeholder="Smoke (0 or 1)" required><br>
+      <input type="text" name="alco" placeholder="Alcohol (0 or 1)" required><br>
+      <input type="text" name="active" placeholder="Active (0 or 1)" required><br>
+      <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+  </div>
+</body>
+</html>

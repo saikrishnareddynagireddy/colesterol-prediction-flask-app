@@ -1,0 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  text-align: center;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center container */
+.container {
+  margin: 5% auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the card */
+.container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Inputs and buttons */
+input,
+button {
+  margin: 10px;
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Input hover and focus states */
+input:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+input:focus {
+  outline: none;
+  border-color: #2196F3;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.4);
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Button active (click) effect */
+button:active {
+  transform: scale(0.97);
+  background-color: #3e8e41;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  input,
+  button {
+    padding: 8px;
+    font-size: 13px;
+  }
+}
